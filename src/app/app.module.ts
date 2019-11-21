@@ -9,6 +9,7 @@ import { HomeComponent } from './main/home/home.component';
 import { TableStateComponent } from './widgets/table-state/table-state.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PaginatePipe } from './pipes/paginate.pipe';
+import { ContentProjectionComponent } from './test/content-projection/content-projection.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PaginatePipe } from './pipes/paginate.pipe';
     PaginatorComponent,
     HomeComponent,
     TableStateComponent,
-    PaginatePipe
+    PaginatePipe,
+    ContentProjectionComponent
   ],
   imports: [
     BrowserModule,

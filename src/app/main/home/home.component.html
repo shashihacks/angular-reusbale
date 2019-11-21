@@ -5,6 +5,16 @@
         </ul>
 
     </div>
+    <app-content-projection [name]= "shashi">
+          <div class="body-content">
+                <h2> I want this in body </h2>
+            </div>
+            <div class="footer-content">
+                <p>I want this in footer</p>
+            </div> 
+    </app-content-projection>
+
+
     <div class="view">
         <router-outlet></router-outlet>
 
