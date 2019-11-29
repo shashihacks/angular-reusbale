@@ -1,0 +1,15 @@
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    white-space:normal;
+}
+.dropdown-menu > li{position:relative;}
+
+.dropdown-menu > li > i{position:absolute;left:100;top:3px;}
+

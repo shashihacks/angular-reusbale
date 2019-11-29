@@ -3,7 +3,7 @@
         {{column}}
     </th>
     <tbody>
-        <tr  *ngFor="let data of dataSource | paginate : {start : 0, end: 3} : {activePage :activePage}">
+        <tr  *ngFor="let data of dataSource | paginate : {start : 0, end: 2} : {activePage :activePage}">
             <th  scope="row"> {{data.position}} </th>
         
             <td> {{data.name}} </td>

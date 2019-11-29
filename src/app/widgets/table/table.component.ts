@@ -19,14 +19,13 @@ export class TableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.dataSource)
-    console.log(this.pageSizeOptions)
+
   }
   
   displayActivePage(pageAttributes){  
     this.activePage = pageAttributes['activePage'] 
     this.pageAttributes = pageAttributes
-    console.log(pageAttributes)
+    
 
   }
 
