@@ -1,14 +1,16 @@
 <div>
         <div class="dropdown" skNgDropdown>
-                <button [disabled]="disabled" [ngClass]="[getColor()]" type="button"
-                        id="dropdownMenuButton" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                <button [disabled]="disabled" [ngClass]="[getColor()]" type="button" id="dropdownMenuButton"
+                        class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="navbar-toggler-icon fa fa-{{icon}}"></i>
                         {{name ? name : 'Dropdown'}}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        
-                        <a class="dropdown-item" *ngFor="let item of data"> <i class="navbar-toggler-icon fa fa-{{icon}}"> </i>
-                                {{item}}</a>
+                        <a class="dropdown-item" *ngFor="let item of data ">
+                                <i *ngIf="item.icon ? item.icon : false"
+                                        class="navbar-toggler-icon fa fa-{{item?.icon}}"></i>
+                                {{ item.name ? item.name : item}}
+                        </a>
                 </div>
         </div>
 </div>

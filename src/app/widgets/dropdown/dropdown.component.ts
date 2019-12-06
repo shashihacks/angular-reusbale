@@ -14,7 +14,7 @@ export class DropdownComponent implements OnInit {
   @Input('disabled') disabled: boolean
   @Input('name') name: string
   @Input('icon') icon: string
-
+  
   constructor() { }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class DropdownComponent implements OnInit {
   }
   getColor() {
     if(this.color === undefined) 
-      return "btn-primary"  
+      return "btn-light"  
     else
       return (('btn-'+this.color).toString())
   }

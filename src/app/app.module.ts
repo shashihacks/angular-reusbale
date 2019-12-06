@@ -20,6 +20,8 @@ import { StockBranchComponent } from './test/stock-inventory/components/stock-br
 import { StockSelectorComponent } from './test/stock-inventory/components/stock-selector/stock-selector.component';
 import { StockProductsComponent } from './test/stock-inventory/components/stock-products/stock-products.component';
 import { SkNgDropdownDirective } from './directives/sk-ng-dropdown.directive';
+import { SelectComponent } from './widgets/select/select.component';
+import { RatingComponent } from './widgets/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { SkNgDropdownDirective } from './directives/sk-ng-dropdown.directive';
     StockSelectorComponent,
     StockProductsComponent,
     DropdownComponent,
-    SkNgDropdownDirective
+    SkNgDropdownDirective,
+    SelectComponent,
+    RatingComponent
 
     
 
