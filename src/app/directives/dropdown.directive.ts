@@ -1,7 +1,7 @@
 import { Directive, HostListener, HostBinding, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[skNgDropdown]'
+  selector: '[skDropdown]'
 })
 export class SkNgDropdownDirective {
 

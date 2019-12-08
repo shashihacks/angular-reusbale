@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './widgets/table/table.component';
 import { PaginatorComponent } from './widgets/paginator/paginator.component';
 import { HomeComponent } from './main/home/home.component';
-import { TableStateComponent } from './widgets/table-state/table-state.component';
 import { Routes, RouterModule } from '@angular/router';
 import { PaginatePipe } from './pipes/paginate.pipe';
 import { AuthFormComponent } from '../app/test/auth-form/auth-form.component'
@@ -19,9 +18,10 @@ import { DropdownComponent } from './widgets/dropdown/dropdown.component';
 import { StockBranchComponent } from './test/stock-inventory/components/stock-branch/stock-branch.component';
 import { StockSelectorComponent } from './test/stock-inventory/components/stock-selector/stock-selector.component';
 import { StockProductsComponent } from './test/stock-inventory/components/stock-products/stock-products.component';
-import { SkNgDropdownDirective } from './directives/sk-ng-dropdown.directive';
+import { SkNgDropdownDirective } from './directives/dropdown.directive';
 import { SelectComponent } from './widgets/select/select.component';
 import { RatingComponent } from './widgets/rating/rating.component';
+import { TooltipDirective } from './directives/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,6 @@ import { RatingComponent } from './widgets/rating/rating.component';
     TableComponent,
     PaginatorComponent,
     HomeComponent,
-    TableStateComponent,
     PaginatePipe,
     AuthFormComponent,
     AuthRememberComponent,
@@ -41,7 +40,9 @@ import { RatingComponent } from './widgets/rating/rating.component';
     DropdownComponent,
     SkNgDropdownDirective,
     SelectComponent,
-    RatingComponent
+    RatingComponent,
+    TooltipDirective,
+  
 
     
 

@@ -8,56 +8,56 @@
     </div>
 
     <!-- NOTE Completed -->
-    <sk-dropdown 
-    [data]="data" [name]="name" [icon]="icon"  [disabled]="disabled">
+    <sk-dropdown [data]="data" [name]="name" [icon]="icon" [disabled]="disabled">
     </sk-dropdown>
 
 
 
-<!-- ---Rating component -->
-    <sk-rating 
-    [rating]="2"
-    [stars]=stars [color]=color (getRating)="getRating($event)"></sk-rating>
+    <!-- NOTE ---Rating component -->
+    <sk-rating [rating]="2" [stars]=stars [color]=color (getRating)="getRating($event)"></sk-rating>
 
+
+    <!-- NOTE Table component -->
+
+    <app-table [dataSource]=dataSource [displayedColumns]=displayedColumns [pageSizeOptions]="[1, 2, 4]"></app-table>
+
+
+
+    <!-- NOTE Tooltip -->
+  
+
+    <!-- /  </label> -->
+
+    <!-- <div  >Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+      </div> -->
+
+    <!-- <div skTooltip
+        
+        [titleTemplate]="titleTemplate"
+        [tooltipTemplate]="template"
+        position="right"
+        tooltipWidth="400">
+
+        <ng-template #titleTemplate let-anchor>
+            {{ anchor.nativeElement.getAttribute("data-name") }}
+        </ng-template>
+        <ng-template #template let-anchor>
+            {{ anchor.nativeElement.getAttribute("data-description") }}
+        </ng-template>
+
+        <h2>List of dances</h2>
+        <ul *ngFor="let dance of dances">
+            <li class="dance"
+                [attr.data-name]="dance.danceName"
+                [attr.data-description]="dance.description">
+                {{ dance.danceName }}
+            </li>
+        </ul>
+    </div> -->
 
     <div class="view">
         <router-outlet></router-outlet>
 
     </div>
 </div>
-
-
-
-
-<!-- <div class="wrapper">
-    <div class="calendar">
-        <div class="month">
-            <div class="prev" (click)="moveDate('prev')">
-                <span>&#10094;</span>
-            </div>
-            <div>
-                <h2 id="month"></h2>
-                <p id="date_str"></p>
-            </div>
-            <div class="next" (click)="moveDate('next')">
-                <span>&#10095;</span>
-            </div>
-        </div>
-        <div class="weekdays">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
-        </div>
-        <div class="days" style="    font-weight: 300;
-    padding: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;">
-
-        </div>
-    </div>
-</div> -->

@@ -13,14 +13,8 @@ export interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewChecked {
-  language = 'html';
-  content = '<p>test</p>';
-  listItems =
-   ['Russia',
-    'India',
-    'Italy',
-    'Spain']
-placeholder="Select Countries"
+  hello = "helllo"
+  position= 'left'
   constructor(private resolver: ComponentFactoryResolver) {
 
   }

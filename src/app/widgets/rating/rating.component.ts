@@ -24,7 +24,7 @@ export class RatingComponent implements OnInit {
   }
   onMouseEnter(number){
     this.rating = number
-    console.log(number)
+  
   }
 
 }
