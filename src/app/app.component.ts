@@ -13,8 +13,8 @@ export interface User {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewChecked {
-  hello = "helllo"
-  position= 'left'
+  tooltipText: string = "helllo"
+  position: string = 'top'
   constructor(private resolver: ComponentFactoryResolver) {
 
   }
