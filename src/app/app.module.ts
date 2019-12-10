@@ -22,6 +22,7 @@ import { SkNgDropdownDirective } from './directives/dropdown.directive';
 import { SelectComponent } from './widgets/select/select.component';
 import { RatingComponent } from './widgets/rating/rating.component';
 import { TooltipDirective } from './directives/tooltip.directive';
+import { SnackbarComponent } from './widgets/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TooltipDirective } from './directives/tooltip.directive';
     SelectComponent,
     RatingComponent,
     TooltipDirective,
+    SnackbarComponent,
   
 
     

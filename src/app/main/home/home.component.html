@@ -32,29 +32,10 @@
         <span class="tooltiptext">Tooltip text</span>
       </div> -->
 
-    <!-- <div skTooltip
-        
-        [titleTemplate]="titleTemplate"
-        [tooltipTemplate]="template"
-        position="right"
-        tooltipWidth="400">
 
-        <ng-template #titleTemplate let-anchor>
-            {{ anchor.nativeElement.getAttribute("data-name") }}
-        </ng-template>
-        <ng-template #template let-anchor>
-            {{ anchor.nativeElement.getAttribute("data-description") }}
-        </ng-template>
+      <!-- NOTE Snackbar -->
+      <sk-snackbar [message]="message" [displayDuration]="displayDuration" [animation]="animation" [animationDuration]=animationDuration ></sk-snackbar>
 
-        <h2>List of dances</h2>
-        <ul *ngFor="let dance of dances">
-            <li class="dance"
-                [attr.data-name]="dance.danceName"
-                [attr.data-description]="dance.description">
-                {{ dance.danceName }}
-            </li>
-        </ul>
-    </div> -->
 
     <div class="view">
         <router-outlet></router-outlet>

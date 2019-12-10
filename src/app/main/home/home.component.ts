@@ -67,6 +67,14 @@ public dances = [
   }
 ];
 
+
+
+  // NOTE Toast message
+  message: string = "This is a toast message"
+  displayDuration: number = 1000
+  animation: boolean = true
+  animationDuration: number = 250
+
   constructor(private widgetService: WidgetService) { }
 
   ngOnInit() {
