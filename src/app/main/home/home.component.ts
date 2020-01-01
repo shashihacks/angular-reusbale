@@ -22,28 +22,26 @@ export class HomeComponent implements OnInit, AfterContentInit, AfterViewInit {
 
   //NOTE  For rating
 
-  stars: number= 5
-  color:string="orange"
+  stars: number = 5
+  color: string = "orange"
 
-hello="hell"
-
-
-
-//NOTE for table
-
-dataSource: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' }, { position: 5, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 6, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 7, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 8, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-
-];
-displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  hello = "hell"
 
 
+
+  //NOTE for table
+
+  dataSource: PeriodicElement[] = [
+    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' }, { position: 5, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+    { position: 6, name: 'Helium', weight: 4.0026, symbol: 'He' },
+    { position: 7, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+    { position: 8, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+
+  ];
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 
 
 
@@ -51,29 +49,34 @@ displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 
 
 
-// NOTE Tooltip
 
-public dances = [
-  {
+
+  // NOTE Tooltip
+
+  public dances = [
+    {
       danceName: "Tango",
-      description: "Tango is a partner dance which originated in the 1880s along the River Plate, the natural border between Argentina and Uruguay." },
-  {
+      description: "Tango is a partner dance which originated in the 1880s along the River Plate, the natural border between Argentina and Uruguay."
+    },
+    {
       danceName: "Flamenco",
       description: "Flamenco is a Spanish art form made up of three parts: guitar playing ('guitarra'), song ('cante'), and dance ('baile')."
-  },
-  {
+    },
+    {
       danceName: "Pasodoble",
       description: "Pasodoble (Spanish: double step) is Spanish a dance that emulates the movements of a bullfight."
-  }
-];
+    }
+  ];
 
 
 
   // NOTE Toast message
   message: string = "This is a toast message"
-  displayDuration: number = 1000
-  animation: boolean = true
+  displayDuration: number = 5000
+  animation: boolean = false
   animationDuration: number = 250
+  show: boolean = true
+  position: string = "bottom-center"
 
   constructor(private widgetService: WidgetService) { }
 

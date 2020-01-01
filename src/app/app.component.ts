@@ -15,6 +15,38 @@ export interface User {
 export class AppComponent implements AfterViewChecked {
   tooltipText: string = "helllo"
   position: string = 'top'
+
+  // NOTE for progressbar 
+
+  // fill: string = "45%"
+  // label: string = this.fill
+  // height: string = '20px';
+  // color: string = "blue"
+  // striped: boolean = false;
+  // animated: boolean = false
+
+
+  // NOTE breadcrumb
+
+  menus: Array<{}> = [
+    {
+      title: 'Home',
+      link: '/home'
+    },
+    {
+      title: 'Library',
+      link: '/test'
+    },
+    {
+      title: 'test',
+      link: '/test'
+    },
+
+  ]
+  separator: string =">"
+  // backgroundColor: string= 'red'
+  // color:string ='white'
+
   constructor(private resolver: ComponentFactoryResolver) {
 
   }

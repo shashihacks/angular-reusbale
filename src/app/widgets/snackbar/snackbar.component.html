@@ -1,2 +1,6 @@
 <p>snackbar works!</p>
-<div id="snackbar" [ngStyle]="{ 'visibility' :  isVisible === true ? 'visible' : 'hidden'}"> {{ message }}   </div>
+<div  
+class="bottom-center"
+
+[ngClass]="{ 'animation' :  true }"
+[ngStyle]="{ 'visibility' :  show === true ? 'visible' : 'hidden'}"> {{ message }}   </div>

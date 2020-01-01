@@ -1,0 +1,9 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  @extend .content;
+}
+
+// create this using ngClass
+.content {
+  // display: none;
+  content: ">";
+}

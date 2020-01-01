@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb" >
+    <ol class="breadcrumb" 
+    [ngStyle] =" {'background-color' :  backgroundColor} "
+    >
+
+        <!-- NOTE fix length as last >>> let last=last -->
+        <li class="breadcrumb-item"
+        
+        *ngFor="let menu of menus; let i= index; "
+        [ngClass]="{active :  i== menus.length-1}"
+        
+        >
+            <a 
+            [ngStyle]="{ 'color': color}"
+            [routerLink]=[menu.link]> {{menu.title}} </a>
+        </li>
+
+    </ol>
+  </nav>

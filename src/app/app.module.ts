@@ -23,6 +23,9 @@ import { SelectComponent } from './widgets/select/select.component';
 import { RatingComponent } from './widgets/rating/rating.component';
 import { TooltipDirective } from './directives/tooltip.directive';
 import { SnackbarComponent } from './widgets/snackbar/snackbar.component';
+import { ProgressBarComponent } from './widgets/progress-bar/progress-bar.component';
+import { BreadcrumbComponent } from './widgets/breadcrumb/breadcrumb.component';
+import { ToastsComponent } from './widgets/toasts/toasts.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { SnackbarComponent } from './widgets/snackbar/snackbar.component';
     RatingComponent,
     TooltipDirective,
     SnackbarComponent,
+    ProgressBarComponent,
+    BreadcrumbComponent,
+    ToastsComponent,
   
 
     
