@@ -26,6 +26,10 @@ import { SnackbarComponent } from './widgets/snackbar/snackbar.component';
 import { ProgressBarComponent } from './widgets/progress-bar/progress-bar.component';
 import { BreadcrumbComponent } from './widgets/breadcrumb/breadcrumb.component';
 import { ToastsComponent } from './widgets/toasts/toasts.component';
+import { TableContainerComponent } from './containers/table-container/table-container.component';
+import { ProgressBarContainerComponent } from './containers/progress-bar-container/progress-bar-container.component';
+import { ToastComponent } from './containers/toast/toast.component';
+import { SnackbarContainerComponent } from './containers/snackbar-container/snackbar-container.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import { ToastsComponent } from './widgets/toasts/toasts.component';
     ProgressBarComponent,
     BreadcrumbComponent,
     ToastsComponent,
+    TableContainerComponent,
+    ProgressBarContainerComponent,
+    ToastComponent,
+    SnackbarContainerComponent,
   
 
     

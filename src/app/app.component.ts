@@ -14,16 +14,9 @@ export interface User {
 })
 export class AppComponent implements AfterViewChecked {
   tooltipText: string = "helllo"
-  position: string = 'top'
+  // position: string = 'top'
 
-  // NOTE for progressbar 
 
-  // fill: string = "45%"
-  // label: string = this.fill
-  // height: string = '20px';
-  // color: string = "blue"
-  // striped: boolean = false;
-  // animated: boolean = false
 
 
   // NOTE breadcrumb
@@ -46,6 +39,15 @@ export class AppComponent implements AfterViewChecked {
   separator: string =">"
   // backgroundColor: string= 'red'
   // color:string ='white'
+
+//NOTE  snackbar
+
+message: string = "This is a toast message"
+displayDuration: number = 5000
+animation: boolean = false
+animationDuration: number = 250
+show: boolean = true
+position: string = "bottom-center"
 
   constructor(private resolver: ComponentFactoryResolver) {
 

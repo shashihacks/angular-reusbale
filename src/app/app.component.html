@@ -6,12 +6,11 @@
 
 </div> -->
 
-
+<!-- 
 <div style="margin: 20%;" skTooltip [tooltipText]="tooltipText" [position]="position">Hover over
-    <!-- <span class="tooltiptext">Tooltip text</span> -->
-  </div>
+  </div> -->
 
-  <div style="margin: 5%;">
+  <!-- <div style="margin: 5%;">
     <sk-progress-bar
     [fill]="fill"
     [label] = "label"
@@ -20,12 +19,25 @@
     [striped]="striped"
     [animated]="animated"
     ></sk-progress-bar>
-</div>
+</div> -->
 
-<div style="margin: 10%;">
+<!-- <div style="margin: 10%;">
     <sk-breadcrumb [menus]="menus"
     [backgroundColor] ="backgroundColor"
     [color]="color"
     [separator]="separator"
     ></sk-breadcrumb>
+</div> -->
+
+<div>
+<table-container></table-container>
+
+</div>
+<div>
+    <sk-toast></sk-toast>
+</div>
+
+<div>
+      <sk-snackbar [show]="show" [message]="message" [position]="position" [displayDuration]="displayDuration" [animation]="animation"
+    [animationDuration]=animationDuration></sk-snackbar>
 </div>
